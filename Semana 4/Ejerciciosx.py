@@ -13,14 +13,13 @@ orden = []
 orden.append(int(input("Ingrese el primer valor: ")))
 orden.append(int(input("Ingrese el segundo valor: ")))
 orden.append(int(input("Ingrese el tercer valor: ")))
-mayor = orden[0]
 
-for x in range(len(orden)): #hacer prueba con doble for, como lo dijo max
+for x in range(len(orden)): 
     for i in range(len(orden)):
         if orden[x]>orden[i]:
-            aux = orden[x]
-            orden[x] = orden[i]
-            orden[i] = aux
+            aux = orden[i]
+            orden[i] = orden[x]
+            orden[x] = aux
         
 
 for x in orden:
