@@ -10,3 +10,4 @@ if edad < 3 or edad > 65:
     pagar = 0
 
 print(f"Debe pagar {pagar} colones")
+#prueba
